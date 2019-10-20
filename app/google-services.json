@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "220239233553",
+    "firebase_url": "https://notifire-2ef7a.firebaseio.com",
+    "project_id": "notifire-2ef7a",
+    "storage_bucket": "notifire-2ef7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220239233553:android:902dd086dcbf4273b0a7b0",
+        "android_client_info": {
+          "package_name": "com.tinker.notifire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220239233553-6atg4bd5a007j2p3r0qkpbctdhhtkssv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrrR3iEwjFeycWWe7j40G3D5edKKWJDBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220239233553-6atg4bd5a007j2p3r0qkpbctdhhtkssv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

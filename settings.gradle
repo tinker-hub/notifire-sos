@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name='Notifire'
+
+include 'floating-bubble', ':floating-bubble'
+project(':floating-bubble').projectDir = new File('./floating-bubble')

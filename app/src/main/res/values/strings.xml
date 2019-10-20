@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Notifire</string>
+
+    <!-- Firebase Push Notifications -->
+    <string name="notifire_notification">Notifire Emergency</string>
+    <string name="notification_channel_id">NOTIFICATION_CHANNEL_ID</string>
+
+    <!-- Error message -->
+    <string name="error_gps_unavailable">GPS needs to be turned on.</string>
+    <string name="error_network_unavailable">Internet connection is required.</string>
+    <string name="send_to_sms">Oh no! Looks like you don\'t have Internet Connection. Want to send the report through Notifier\'s SMS Service?</string>
+    <string name="error_zone_not_supported">Your current zone is not supported.</string>
+
+    <!-- Others -->
+    <string name="emergency_bubble_title">Emergency Bubble</string>
+    <string name="get_location">GET LOCATION</string>
+    <string name="timer_message">Sending Emergency Report in %1$s</string>
+    <string name="sending_message">Sending Message!</string>
+    <string name="cancel_report_message">Emergency Report Aborted!</string>
+    <string name="report_sent">Report sent!</string>
+</resources>

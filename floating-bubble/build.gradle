@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.github.dcendents.android-maven'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'com.google.android.material:material:1.1.0-beta01'
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'floating-bubble'
+
+    publishedGroupId = 'com.github.bijoysingh'
+    libraryName = 'floating-bubble'
+    artifact = 'floating-bubble'
+
+    libraryDescription = 'Simple library to add Floating Bubble into your app!'
+
+    siteUrl = 'https://github.com/BijoySingh/FloatingBubbleLib'
+    gitUrl = 'https://github.com/BijoySingh/FloatingBubbleLib.git'
+
+    libraryVersion = '3.0.0'
+
+    developerId = 'bijoysingh693'
+    developerName = 'Bijoy Singh Kochar'
+    developerEmail = 'bijoysingh693@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+repositories {
+    mavenCentral()
+}
